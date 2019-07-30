@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.2'
 gem 'bootstrap-sass', '3.3.7'
 # Add Rails Controller testing
 gem 'rails-controller-testing'
+# Add BCrypt for password hash functions
+gem 'bcrypt',         '3.1.12'
 # Use sqlite3 as the database for Active Record -- Switched out from TOP suggestion
 group :development, :test do
   gem 'sqlite3'
