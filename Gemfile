@@ -6,7 +6,7 @@ ruby '2.6.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Add Boostrap for SASS CSS styling
-gem 'bootstrap-sass', '3.3.7'
+gem "bootstrap-sass", ">= 3.4.1"
 # Add Rails Controller testing
 gem 'rails-controller-testing'
 # Add BCrypt for password hash functions
@@ -15,6 +15,9 @@ gem 'bcrypt',         '3.1.12'
 group :development, :test do
   gem 'sqlite3'
 end
+# Update Nokogiri to avoid vulnerabilities
+gem "nokogiri", ">= 1.10.4"
+
 
 group :production do
   gem 'pg'
