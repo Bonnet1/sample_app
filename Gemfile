@@ -43,6 +43,11 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Generate fake users to fill out user list
+gem 'faker',          '1.7.3'
+# Add in ability to paginate
+gem 'will_paginate', '3.1.8'
+gem 'bootstrap-will_paginate', '~> 1.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
