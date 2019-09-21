@@ -11,6 +11,9 @@ gem "bootstrap-sass", ">= 3.4.1"
 gem 'rails-controller-testing'
 # Add BCrypt for password hash functions
 gem 'bcrypt',         '3.1.12'
+# Add carrierwave and mini_magick to handle photo uploads
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 # Use sqlite3 as the database for Active Record -- Switched out from TOP suggestion
 group :development, :test do
   gem 'sqlite3'
@@ -21,6 +24,7 @@ gem "nokogiri", ">= 1.10.4"
 
 group :production do
   gem 'pg'
+  gem 'fog', '1.42'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
