@@ -13,7 +13,7 @@ gem 'rails-controller-testing'
 gem 'bcrypt',         '3.1.12'
 # Add carrierwave and mini_magick to handle photo uploads
 gem 'carrierwave',             '1.2.2'
-gem 'mini_magick',             '4.7.0'
+gem "mini_magick", ">= 4.9.4"
 # Use sqlite3 as the database for Active Record -- Switched out from TOP suggestion
 group :development, :test do
   gem 'sqlite3'
